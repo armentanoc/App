@@ -3,24 +3,17 @@
 Welcome to C#/.NET Programming Logic, your one-stop-shop for mastering the ABCs of programming logic. 
 No rocket launches here, just down-to-earth lessons to help you become the logic maestro you were meant to be.
 
-## 📚 Table of Contents
+## 📚 Project Structure
 
-1. [Introduction](#introduction)
-2. [Lessons](#lessons)
-   - [Lesson 1: ...](lessons/lesson1.md)
-3. [Contributing](#contributing)
-
-## Introduction
-
-Programming logic might sound daunting, but fear not! This repository is your friendly guide in the world of coding logic. Let's navigate through it together.
-
-## Lessons
-
-### Lesson 1: ...
-
-[Link to Lesson 1](lessons/lesson1.md)
-
-...
+1. [LibUserInput](https://github.com/armentanoc/csharp_programming_logic/tree/main/LibUserInput)
+   - [Calculate.cs](https://github.com/armentanoc/csharp_programming_logic/blob/main/LibUserInput/Calculate.cs)
+   - [Receive.cs](https://github.com/armentanoc/csharp_programming_logic/blob/main/LibUserInput/Receive.cs))
+3. [LibFormatOutput](https://github.com/armentanoc/csharp_programming_logic/tree/main/LibUserInput)
+   - [Print.cs](https://github.com/armentanoc/csharp_programming_logic/blob/main/LibFormatOutput/Print.cs)
+4. [csharp_programming_logic](https://github.com/armentanoc/csharp_programming_logic/tree/main/csharp_programming_logic)
+   - [ArrayExercises](https://github.com/armentanoc/csharp_programming_logic/tree/main/csharp_programming_logic/ArrayExercises)
+   - [PrimitiveTypeExercises](https://github.com/armentanoc/csharp_programming_logic/tree/main/csharp_programming_logic/PrimitiveTypeExercises)
+   - [Program.cs](https://github.com/armentanoc/csharp_programming_logic/blob/main/csharp_programming_logic/Program.cs)
 
 ## Contributing
 
