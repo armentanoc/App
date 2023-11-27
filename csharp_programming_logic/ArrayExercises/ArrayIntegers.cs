@@ -30,9 +30,9 @@ namespace csharp_programming_logic.ArrayExercises
         {
             int[] resultArray = new int[end - start + 1];
 
-            for (int i = start; i <= end; i++)
+            for (int var = start; var <= end; var++)
             {
-                resultArray[i - start] = i;
+                resultArray[var - start] = var;
             }
 
             return resultArray;

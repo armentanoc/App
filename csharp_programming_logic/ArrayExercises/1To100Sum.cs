@@ -22,3 +22,22 @@ namespace csharp_programming_logic.ArrayExercises
         }
     }
 }
+
+/*
+
+obs.: gauss sum would be more appropriate
+ 
+ static void Execute()
+    {
+        int n = 100;
+        int result = GaussSum(n);
+
+        Console.WriteLine($"A soma dos {n} primeiros números naturais é: {result}");
+    }
+
+    static int GaussSum(int n)
+    {
+        return n * (n + 1) / 2;
+    }
+ 
+ */

@@ -5,6 +5,7 @@ namespace csharp_programming_logic.ArrayExercises
     {
         internal static void Execute()
         {
+            int[] array = { 1, 2, 3 };
             throw new NotImplementedException();
         }
     }

@@ -10,7 +10,7 @@ namespace csharp_programming_logic.ArrayExercises
             Console.WriteLine("\nSOMA DE VETORES");
             Print.HorizontalLine();
 
-            Console.WriteLine("\nVETOR A");
+            Console.WriteLine("\n\nVETOR A");
             int[] arrayA = ArrayExercises.ArrayIntegers.Execute();
             Print.HorizontalLine();
 
