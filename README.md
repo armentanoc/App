@@ -1,4 +1,4 @@
-# C#/.NET Programming Logic 🧠
+# C#/.NET Core Programming Logic 🧠
 
 Welcome to C#/.NET Programming Logic, your one-stop-shop for mastering the ABCs of programming logic. 
 No rocket launches here, just down-to-earth lessons to help you become the logic maestro you were meant to be.
