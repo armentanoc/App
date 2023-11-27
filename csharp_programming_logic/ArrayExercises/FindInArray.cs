@@ -33,5 +33,5 @@ namespace csharp_programming_logic.ArrayExercises
                 Console.WriteLine($"\nNúmero {numberToSearch} não encontrado no array.");
             }
         }
-        }
+    }
 }
