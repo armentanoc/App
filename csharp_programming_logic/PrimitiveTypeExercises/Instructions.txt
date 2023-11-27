@@ -1,0 +1,32 @@
+﻿Observação: Tente fazer da forma mais "clean", utilizando os conceitos da aula
+
+Estruturas de Decisão:
+1 - Verificação de Número Par ou Ímpar:
+Peça ao usuário para inserir um número.
+Use uma estrutura de decisão para determinar se o número é par ou ímpar.
+
+2 - Calculadora Simples:
+Solicite ao usuário dois números e uma operação (adição, subtração, multiplicação, divisão).
+Utilize uma estrutura de decisão para realizar a operação correta e exibir o resultado.
+
+3 - Aprovação em uma Disciplina:
+Solicite ao usuário a nota de um aluno.
+Utilize uma estrutura de decisão para informar se o aluno foi aprovado ou reprovado (considerando a média 7).
+
+4 - Identificação de Triângulos:
+Pergunte ao usuário os comprimentos dos lados de um triângulo.
+Use uma estrutura de decisão para identificar se é equilátero, isósceles ou escaleno.
+
+Tipos de Variáveis:
+
+5 - Manipulação de Strings:
+Solicite ao usuário para inserir seu nome completo.
+Utilize variáveis de string para exibir o nome em maiúsculas, minúsculas e o comprimento da string.
+
+6 - Conversão de Tipos:
+Peça ao usuário para inserir um número decimal.
+Converta esse número para inteiro, double e float e exiba ambos.
+
+7 - Cálculo de Área:
+Solicite ao usuário o raio de um círculo.
+Utilize uma variável para calcular e exibir a área do círculo.
