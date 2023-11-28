@@ -28,7 +28,7 @@ namespace csharp_programming_logic.ArrayExercises
 
         }
 
-        private static void showArrInformation(float[] arrFloat )
+        static void showArrInformation(float[] arrFloat )
         {
             Print.HorizontalLine();
             Console.WriteLine("\nARRAY DINÂMICO:");
@@ -38,7 +38,7 @@ namespace csharp_programming_logic.ArrayExercises
             Console.WriteLine($"\nQtd de pares: " + calculateEvenNumbers(arrFloat));
         }
 
-        private static int calculateEvenNumbers(float[] arr)
+        static int calculateEvenNumbers(float[] arr)
         {
             int evenNumbers = 0;
             foreach (float number in arr)
@@ -48,7 +48,7 @@ namespace csharp_programming_logic.ArrayExercises
             return evenNumbers;
         }
 
-        private static float[] ResizeArray(float[] oldArray, int newSize)
+        static float[] ResizeArray(float[] oldArray, int newSize)
         {
             float[] newArray = new float[newSize];
             Array.Copy(oldArray, newArray, Math.Min(oldArray.Length, newSize));

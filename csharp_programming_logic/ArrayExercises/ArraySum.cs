@@ -21,7 +21,7 @@ namespace csharp_programming_logic.ArrayExercises
             ExecuteSum(arrayA, arrayB);
         }
 
-        private static void ExecuteSum(int[] arrayA, int[] arrayB)
+        static void ExecuteSum(int[] arrayA, int[] arrayB)
         {
             int maxLength = Math.Max(arrayA.Length, arrayB.Length);
             int[] arrayC = new int[maxLength];

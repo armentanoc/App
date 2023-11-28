@@ -20,7 +20,7 @@ namespace csharp_programming_logic.ArrayExercises
             SearchForNumber(numberToSearch, numbersArray);
         }
 
-        private static void SearchForNumber(int numberToSearch, int[] numbersArray)
+        static void SearchForNumber(int numberToSearch, int[] numbersArray)
         {
             int index = Array.IndexOf(numbersArray, numberToSearch);
 

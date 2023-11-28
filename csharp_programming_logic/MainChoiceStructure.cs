@@ -60,7 +60,7 @@ namespace csharp_programming_logic
                     ArrayExercises.SortingAlgorithm.Execute(); //falta
                     break;
                 case 15:
-                    BidimensionalArrayExercises.Sum.Execute(); //falta
+                    BidimensionalArrayExercises.SumElements.Execute(); //falta
                     break;
                 case 16:
                     BidimensionalArrayExercises.Identity.Execute(); //falta

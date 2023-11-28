@@ -1,5 +1,4 @@
-﻿using System;
-using csharp_programming_logic.PrimitiveTypeExercises;
+﻿
 using LibFormatOutput;
 using LibUserInput;
 
@@ -15,57 +14,66 @@ namespace csharp_programming_logic
             {
                 PrintTitle();
 
-                PrimitiveTypeChoices();
-                ArrayChoices();
-                BidimensionalArrayChoices();
+                int currentNumber = 1;
 
-                userChoice = Receive.IntNumber();
+                PrintChoices("Primitive Type Exercises", new string[]
+                {
+                "Par ou ímpar",
+                "Calculadora",
+                "Aprovação em disciplina",
+                "Identificação de triângulos",
+                "Manipulação de strings",
+                "Conversão de tipos",
+                "Cálculo de área"
+                }, ref currentNumber);
+
+                PrintChoices("Array Exercises", new string[]
+                {
+                "Array simples de inteiros",
+                "Buscar elemento em um array",
+                "Soma de vetores",
+                "Funções em vetores",
+                "Soma de 1 a 100",
+                "Array Dinâmico",
+                "Algoritmo de ordenação"
+                }, ref currentNumber);
+
+                PrintChoices("Bidimensional Array Exercises", new string[]
+                {
+                "Soma de matriz de inteiros",
+                "Verificação de matriz identidade",
+                "Multiplicação de matrizes",
+                "Soma de linhas e colunas em matriz bidimensional"
+                }, ref currentNumber);
+
+                userChoice = Receive.ProgramNumber();
                 MainChoiceStructure.ChooseProgram(userChoice, args);
 
-                Thread.Sleep(3000); //pause for 3 seconds
+                Thread.Sleep(3000); // pause for 3 seconds
             }
         }
 
-        private static void PrintTitle()
+        static void PrintTitle()
         {
+            Console.WriteLine("\nC# PROGRAMMING LOGIC");
             Print.HorizontalLine();
-            Console.WriteLine("C# PROGRAMMING LOGIC\n");
-            Console.WriteLine("Escolha um programa para executar:\n");
             Console.WriteLine("0 - Encerrar");
             Print.HorizontalLine();
         }
 
-        private static void PrimitiveTypeChoices()
+        static void PrintChoices(string sectionTitle, string[] choices, ref int currentNumber)
         {
-            Console.WriteLine("1 - Par ou ímpar");
-            Console.WriteLine("2 - Calculadora");
-            Console.WriteLine("3 - Aprovação em disciplina");
-            Console.WriteLine("4 - Identificação de triângulos");
-            Console.WriteLine("5 - Manipulação de strings");
-            Console.WriteLine("6 - Conversão de tipos");
-            Console.WriteLine("7 - Cálculo de área");
-            Print.HorizontalLine();
-        }
+            Console.WriteLine($"{sectionTitle}\n");
 
-        private static void ArrayChoices()
-        {
-            Console.WriteLine("8 - Array simples de inteiros");
-            Console.WriteLine("9 - Buscar elemento em um array");
-            Console.WriteLine("10 - Soma de vetores");
-            Console.WriteLine("11 - Funções em vetores");
-            Console.WriteLine("12 - Soma de 1 a 100");
-            Console.WriteLine("13 - Array Dinâmico");
-            Console.WriteLine("14 - Algoritmo de ordenação");
-            Print.HorizontalLine();
-        }
+            for (int i = 0; i < choices.Length; i++)
+            {
+                Console.Write($"{currentNumber + i} - {choices[i]}; ");
+            }
 
-        private static void BidimensionalArrayChoices()
-        {
-            Console.WriteLine("15 - Soma de matriz de inteiros");
-            Console.WriteLine("16 - Verificação de matriz identidade");
-            Console.WriteLine("17 - Multiplicação de matrizes");
-            Console.WriteLine("18 - Soma de linhas e colunas em matriz bidimensional");
+            Console.WriteLine();
             Print.HorizontalLine();
+
+            currentNumber += choices.Length; // Update the current number for the next section
         }
     }
 }

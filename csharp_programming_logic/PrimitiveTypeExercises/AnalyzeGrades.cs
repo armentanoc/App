@@ -14,7 +14,7 @@ namespace csharp_programming_logic.PrimitiveTypeExercises
             Console.WriteLine(isTheStudentApproved);
         }
 
-        private static void PrintTitle()
+        static void PrintTitle()
         {
             Console.WriteLine("\nVERIFICAÇÃO DE NOTA");
             Print.HorizontalLine();

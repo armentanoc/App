@@ -23,14 +23,14 @@ namespace csharp_programming_logic.ArrayExercises
 
         }
 
-        private static void writeExecuteMessage()
+        static void writeExecuteMessage()
         {
             Print.HorizontalLine();
             Console.WriteLine("\nFUNÇÕES EM VETORES\n");
             Console.WriteLine("Você deverá informar os 10 números que irão compor o vetor.");
         }
 
-        private static float[] generateTenItemsArray()
+        static float[] generateTenItemsArray()
         {
             float[] arr = new float[10];
             for (int i = 0; i < 10; i++)
@@ -42,7 +42,7 @@ namespace csharp_programming_logic.ArrayExercises
             return arr;
         }
 
-        private static void writeMessageTenItemsArray(float[] arr)
+        static void writeMessageTenItemsArray(float[] arr)
         {
             Print.HorizontalLine();
             Console.WriteLine("\nARRAY GERADO\n");

@@ -17,7 +17,7 @@ namespace csharp_programming_logic.PrimitiveTypeExercises
 
         }
 
-        private static float[] GetTriangleSides()
+        static float[] GetTriangleSides()
         {
             float[] sides = new float[3];
 
@@ -28,13 +28,13 @@ namespace csharp_programming_logic.PrimitiveTypeExercises
             return sides;
         }
 
-        private static void PrintTitle()
+        static void PrintTitle()
         {
             Console.WriteLine("\nIDENTIFICAÇÃO DE TRIÂNGULOS");
             Print.HorizontalLine();
         }
 
-        private static TriangleType DetermineTriangleType(float[] sides)
+        static TriangleType DetermineTriangleType(float[] sides)
         {
             if (sides.Distinct().Count() == 1)
             {

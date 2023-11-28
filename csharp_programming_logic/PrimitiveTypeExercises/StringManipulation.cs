@@ -23,7 +23,7 @@ Utilize variáveis de string para exibir o nome em maiúsculas, minúsculas e o 
             PrintNameInformation(name, lowercaseName, uppercaseName, lengthName);
         }
 
-        private static void PrintNameInformation(string name, string lowercaseName, string uppercaseName, int lengthName)
+        static void PrintNameInformation(string name, string lowercaseName, string uppercaseName, int lengthName)
         {
             Print.HorizontalLine();
             Console.WriteLine($"Nome: {name}");
@@ -32,7 +32,7 @@ Utilize variáveis de string para exibir o nome em maiúsculas, minúsculas e o 
             Console.WriteLine($"Tamanho da String: {lengthName}");
         }
 
-        private static void PrintTitle()
+        static void PrintTitle()
         {
             Console.WriteLine("\nMANIPULAÇÃO DE STRINGS");
             Print.HorizontalLine();

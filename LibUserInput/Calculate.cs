@@ -38,7 +38,7 @@ namespace LibUserInput
 
             }
 
-        private static float GetResultOfOperation(float firstNumber, float secondNumber, int operationChoice)
+        static float GetResultOfOperation(float firstNumber, float secondNumber, int operationChoice)
         {
 
             float result = 0;
@@ -60,22 +60,22 @@ namespace LibUserInput
             return result;
         }
 
-        private static float Divide(float firstNumber, float secondNumber)
+        static float Divide(float firstNumber, float secondNumber)
         {
             return firstNumber / secondNumber;
         }
 
-        private static float Multiply(float firstNumber, float secondNumber)
+        static float Multiply(float firstNumber, float secondNumber)
         {
             return firstNumber * secondNumber;
         }
 
-        private static float Subtract(float firstNumber, float secondNumber)
+        static float Subtract(float firstNumber, float secondNumber)
         {
             return firstNumber - secondNumber;
         }
 
-        private static float Sum(float firstNumber, float secondNumber)
+        static float Sum(float firstNumber, float secondNumber)
         {
             return firstNumber + secondNumber;
         }
