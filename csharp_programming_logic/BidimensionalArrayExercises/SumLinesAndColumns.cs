@@ -1,7 +1,6 @@
-﻿
-namespace csharp_programming_logic.ArrayExercises
+﻿namespace csharp_programming_logic.BidimensionalArrayExercises
 {
-    internal class Multiply
+    internal class SumLinesAndColumns
     {
         internal static void Execute()
         {

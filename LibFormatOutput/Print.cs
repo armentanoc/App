@@ -23,7 +23,7 @@
         {
             int lineWidth = Console.WindowWidth;
             char lineChar = '_';
-            Console.WriteLine(new string(lineChar, lineWidth));
+            Console.WriteLine(new string(lineChar, lineWidth) + "\n");
         }
     }
 }

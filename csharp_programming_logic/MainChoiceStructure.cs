@@ -32,10 +32,10 @@ namespace csharp_programming_logic
                     PrimitiveTypeExercises.StringManipulation.Execute();
                     break;
                 case 6:
-                    PrimitiveTypeExercises.TypeConversion.Execute();
+                    PrimitiveTypeExercises.TypeConversion.Execute(); //falta
                     break;
                 case 7:
-                    PrimitiveTypeExercises.AreaCalculator.Execute();
+                    PrimitiveTypeExercises.AreaCalculator.Execute(); //falta
                     break;
                 case 8:
                     int[] numbersArray = ArrayExercises.ArrayIntegers.Execute();
@@ -57,19 +57,19 @@ namespace csharp_programming_logic
                     ArrayExercises.DynamicArray.Execute();
                     break;
                 case 14:
-                    ArrayExercises.SortingAlgorithm.Execute();
+                    ArrayExercises.SortingAlgorithm.Execute(); //falta
                     break;
                 case 15:
-                    BidimensionalArrayExercises.Sum.Execute();
+                    BidimensionalArrayExercises.Sum.Execute(); //falta
                     break;
                 case 16:
-                    BidimensionalArrayExercises.Identity.Execute();
+                    BidimensionalArrayExercises.Identity.Execute(); //falta
                     break;
                 case 17:
-                    ArrayExercises.Multiply.Execute();
+                    BidimensionalArrayExercises.Multiply.Execute(); //falta
                     break;
                 case 18:
-                    ArrayExercises.SumLinesAndColumns.Execute();
+                    BidimensionalArrayExercises.SumLinesAndColumns.Execute(); //falta
                     break;
                 default:
                     Console.WriteLine("Escolha inválida.\n");

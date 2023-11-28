@@ -13,18 +13,26 @@ namespace csharp_programming_logic
 
             while (userChoice != 0)
             {
-                Print.HorizontalLine();
-                Console.WriteLine("\nC# PROGRAMMING LOGIC\n");
-                Console.WriteLine("Escolha um programa para executar:\n");
+                PrintTitle();
+
                 PrimitiveTypeChoices();
                 ArrayChoices();
                 BidimensionalArrayChoices();
-                Console.WriteLine("0 - Encerrar\n");
-                Print.HorizontalLine();
 
                 userChoice = Receive.IntNumber();
                 MainChoiceStructure.ChooseProgram(userChoice, args);
+
+                Thread.Sleep(3000); //pause for 3 seconds
             }
+        }
+
+        private static void PrintTitle()
+        {
+            Print.HorizontalLine();
+            Console.WriteLine("C# PROGRAMMING LOGIC\n");
+            Console.WriteLine("Escolha um programa para executar:\n");
+            Console.WriteLine("0 - Encerrar");
+            Print.HorizontalLine();
         }
 
         private static void PrimitiveTypeChoices()
@@ -36,6 +44,7 @@ namespace csharp_programming_logic
             Console.WriteLine("5 - Manipulação de strings");
             Console.WriteLine("6 - Conversão de tipos");
             Console.WriteLine("7 - Cálculo de área");
+            Print.HorizontalLine();
         }
 
         private static void ArrayChoices()
@@ -47,6 +56,7 @@ namespace csharp_programming_logic
             Console.WriteLine("12 - Soma de 1 a 100");
             Console.WriteLine("13 - Array Dinâmico");
             Console.WriteLine("14 - Algoritmo de ordenação");
+            Print.HorizontalLine();
         }
 
         private static void BidimensionalArrayChoices()
@@ -55,6 +65,7 @@ namespace csharp_programming_logic
             Console.WriteLine("16 - Verificação de matriz identidade");
             Console.WriteLine("17 - Multiplicação de matrizes");
             Console.WriteLine("18 - Soma de linhas e colunas em matriz bidimensional");
+            Print.HorizontalLine();
         }
     }
 }
