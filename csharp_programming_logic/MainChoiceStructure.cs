@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace csharp_programming_logic
 {
     internal class MainChoiceStructure
     {
-
         public static void ChooseProgram(int userChoice, string[] args)
         {
             switch (userChoice)
@@ -60,16 +54,16 @@ namespace csharp_programming_logic
                     ArrayExercises.SortingAlgorithm.Execute(); //falta
                     break;
                 case 15:
-                    BidimensionalArrayExercises.SumElements.Execute(); //falta
+                    BidimensionalArrayExercises.SumElements.Execute();
                     break;
                 case 16:
-                    BidimensionalArrayExercises.Identity.Execute(); //falta
+                    BidimensionalArrayExercises.Identity.Execute(); 
                     break;
                 case 17:
-                    BidimensionalArrayExercises.Multiply.Execute(); //falta
+                    BidimensionalArrayExercises.Multiply.Execute(); 
                     break;
                 case 18:
-                    BidimensionalArrayExercises.SumLinesAndColumns.Execute(); //falta
+                    BidimensionalArrayExercises.SumLinesAndColumns.Execute(); 
                     break;
                 default:
                     Console.WriteLine("Escolha inválida.\n");

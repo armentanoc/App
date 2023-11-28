@@ -1,7 +1,6 @@
 ﻿
 using LibFormatOutput;
 using LibUserInput;
-using System.Linq.Expressions;
 
 namespace csharp_programming_logic.ArrayExercises
 {

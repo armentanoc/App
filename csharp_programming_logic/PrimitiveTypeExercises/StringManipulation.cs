@@ -1,7 +1,6 @@
 ﻿
 using LibFormatOutput;
 using LibUserInput;
-using System.Numerics;
 
 namespace csharp_programming_logic.PrimitiveTypeExercises
 {

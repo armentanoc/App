@@ -1,5 +1,4 @@
 ﻿
-
 using LibFormatOutput;
 using LibUserInput;
 

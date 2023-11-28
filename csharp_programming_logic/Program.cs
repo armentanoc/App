@@ -49,7 +49,7 @@ namespace csharp_programming_logic
                 userChoice = Receive.ProgramNumber();
                 MainChoiceStructure.ChooseProgram(userChoice, args);
 
-                Thread.Sleep(3000); // pause for 3 seconds
+                Thread.Sleep(3000); // Pause for 3 seconds
             }
         }
 

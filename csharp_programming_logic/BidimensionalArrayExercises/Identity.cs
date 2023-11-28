@@ -1,7 +1,6 @@
 ﻿
 namespace csharp_programming_logic.BidimensionalArrayExercises
 {
-
     using LibFormatOutput;
     internal class Identity
     {

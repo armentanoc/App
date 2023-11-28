@@ -1,9 +1,4 @@
 ﻿using LibFormatOutput;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace csharp_programming_logic.ArrayExercises
 {
@@ -25,7 +20,7 @@ namespace csharp_programming_logic.ArrayExercises
 
 /*
 
-obs.: gauss sum would be more appropriate
+Obs.: Gauss sum would be more appropriate
  
  static void Execute()
     {

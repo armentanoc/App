@@ -3,8 +3,7 @@
 
     using LibFormatOutput;
     using System;
-
-    internal class Multiply
+        internal class Multiply
     {
         internal static void Execute()
         {

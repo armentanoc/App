@@ -1,5 +1,4 @@
-﻿using System;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿
 using LibUserInput;
 
 namespace csharp_programming_logic.PrimitiveTypeExercises
