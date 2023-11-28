@@ -116,5 +116,19 @@ namespace LibUserInput
             return choice;
             
         }
+
+        public static decimal Decimal()
+        {
+            decimal number;
+
+            while (true)
+            {
+                Console.Write("Informe um número: ");
+                if (decimal.TryParse(Console.ReadLine(), out number)) { break; }
+                Console.WriteLine("Erro: Entrada inválida. Por favor, insira um número válido (decimal).\n");
+            }
+
+            return number;
+        }
     }
 }

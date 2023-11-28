@@ -15,26 +15,45 @@ namespace csharp_programming_logic.BidimensionalArrayExercises
                 {0, 0, 1}
             };
 
-            int[,] matrizDiagonalNão1 = {
+            int[,] matrizAntiDiagonal = {
+                {0, 0, 1},
+                {0, 1, 0},
+                {1, 0, 0}
+            };
+
+            int[,] matrizDiagonalNao1 = {
                 {1, 0, 0},
                 {0, 2, 0},
                 {0, 0, 1}
             };
 
-            int[,] matrizNãoDiagonalNão0 = {
+            int[,] matrizNaoDiagonalNao0 = {
                 {1, 0, 0},
                 {0, 1, 7},
                 {0, 0, 1}
             };
 
+            int[,] matrizNaoQuadrada = {
+                {1, 0},
+                {0, 1},
+                {0, 0}
+            };
+
             Print.BidimensionalArray(matrizIdentidade);
             Console.WriteLine("\nÉ uma matriz identidade: " + CheckIdentityMatrix(matrizIdentidade) + "\n");
 
-            Print.BidimensionalArray(matrizDiagonalNão1);
-            Console.WriteLine("\nÉ uma matriz identidade: " + CheckIdentityMatrix(matrizDiagonalNão1) + "\n");
+            Print.BidimensionalArray(matrizAntiDiagonal);
+            Console.WriteLine("\nÉ uma matriz identidade: " + CheckIdentityMatrix(matrizAntiDiagonal) + "\n");
 
-            Print.BidimensionalArray(matrizNãoDiagonalNão0);
-            Console.WriteLine("\nÉ uma matriz identidade: " + CheckIdentityMatrix(matrizNãoDiagonalNão0) + "\n");
+            Print.BidimensionalArray(matrizDiagonalNao1);
+            Console.WriteLine("\nÉ uma matriz identidade: " + CheckIdentityMatrix(matrizDiagonalNao1) + "\n");
+
+            Print.BidimensionalArray(matrizNaoDiagonalNao0);
+            Console.WriteLine("\nÉ uma matriz identidade: " + CheckIdentityMatrix(matrizNaoDiagonalNao0) + "\n");
+
+            Print.BidimensionalArray(matrizNaoQuadrada);
+            Console.WriteLine("\nÉ uma matriz identidade: " + CheckIdentityMatrix(matrizNaoQuadrada) + "\n");
+
         }
 
         static bool CheckIdentityMatrix(int[,] matriz)
@@ -42,35 +61,33 @@ namespace csharp_programming_logic.BidimensionalArrayExercises
             int rows = matriz.GetLength(0);
             int cols = matriz.GetLength(1);
 
-            // Verifica se a matriz é quadrada
             if (rows != cols)
             {
-                return false; // Já retorna falso e não analisa linhas e colunas
+                return false; // Já retorna falso e nao analisa linhas e colunas se a matriz nao for quadrada
             }
 
-            // Verifica se os elementos diagonais são iguais a 1 e os não diagonais são iguais a 0
             for (int i = 0; i < rows; i++)
             {
                 if (matriz[i, i] != 1)
                 {
-                    return false; // Elemento diagonal não é 1
+                    return false; // Elemento diagonal nao é 1
                 }
 
                 for (int j = 0; j < cols; j++)
                 {
                     if (i != j && matriz[i, j] != 0)
                     {
-                        return false; // Elemento não diagonal não é 0
+                        return false; // Elemento nao diagonal nao é 0
                     }
                 }
             }
 
-            return true; // A matriz passou em todas as verificações
+            return true; 
         }
 
         static void PrintTitle()
         {
-            Console.WriteLine("\nVERIFICAÇÃO DE MATRIZ IDENTIDADE");
+            Console.WriteLine("\nVERIFICAÇaO DE MATRIZ IDENTIDADE");
             Print.HorizontalLine();
         }
     }
