@@ -56,10 +56,10 @@ namespace csharp_programming_logic.BidimensionalArrayExercises
 
         }
 
-        static bool CheckIdentityMatrix(int[,] matriz)
+        static bool CheckIdentityMatrix(int[,] matrix)
         {
-            int rows = matriz.GetLength(0);
-            int cols = matriz.GetLength(1);
+            int rows = matrix.GetLength(0);
+            int cols = matrix.GetLength(1);
 
             if (rows != cols)
             {
@@ -68,14 +68,14 @@ namespace csharp_programming_logic.BidimensionalArrayExercises
 
             for (int i = 0; i < rows; i++)
             {
-                if (matriz[i, i] != 1)
+                if (matrix[i, i] != 1)
                 {
                     return false; // Elemento diagonal nao é 1
                 }
 
                 for (int j = 0; j < cols; j++)
                 {
-                    if (i != j && matriz[i, j] != 0)
+                    if (i != j && matrix[i, j] != 0)
                     {
                         return false; // Elemento nao diagonal nao é 0
                     }
@@ -87,9 +87,24 @@ namespace csharp_programming_logic.BidimensionalArrayExercises
 
         static void PrintTitle()
         {
-            Console.WriteLine("\nVERIFICAÇaO DE MATRIZ IDENTIDADE");
+            Console.WriteLine("\nVERIFICAÇÃO DE MATRIZ IDENTIDADE");
             Print.HorizontalLine();
         }
     }
 }
-    
+
+/*
+ Anti-Diagonal
+
+ Console.WriteLine();
+
+            int n = matrizAntiDiagonal.GetLength(0) - 1;
+
+            for (int i = 0; i < n+1; i++)
+            {
+                int row = i;
+                int col = n - i;
+                Console.WriteLine($"({row}, {col}) => {matrizAntiDiagonal[row, col]}");
+            }
+
+ */
