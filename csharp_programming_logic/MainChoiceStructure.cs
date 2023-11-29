@@ -65,6 +65,15 @@ namespace csharp_programming_logic
                 case 18:
                     BidimensionalArrayExercises.SumLinesAndColumns.Execute(); 
                     break;
+                case 19:
+                   DictionaryExercises.CountNumbers.Execute();
+                    break;
+                case 20:
+                    DictionaryExercises.ChooseLanguage.Execute();
+                    break;
+                case 21:
+                    DictionaryExercises.ExploringMethods.Execute();
+                    break;
                 default:
                     Console.WriteLine("Escolha inválida.\n");
                     Program.Main(args);

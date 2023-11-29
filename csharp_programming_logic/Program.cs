@@ -46,6 +46,13 @@ namespace csharp_programming_logic
                 "Soma de linhas e colunas em matriz bidimensional"
                 }, ref currentNumber);
 
+                PrintChoices("Dictionary Exercises", new string[]
+                {
+                "Contador de números em array",
+                "Escolha de idioma de exibição",
+                "Explorando os métodos"
+                }, ref currentNumber);
+
                 userChoice = Receive.ProgramNumber();
                 MainChoiceStructure.ChooseProgram(userChoice, args);
 
