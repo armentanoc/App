@@ -1,4 +1,5 @@
 ﻿
+
 namespace LibFormatOutput
 {
     public class Print
@@ -42,11 +43,19 @@ namespace LibFormatOutput
             Console.WriteLine(new string(lineChar, lineWidth) + "\n");
         }
 
-        public static void Dict(Dictionary<string, int> dict)
+        public static void DictStrInt(Dictionary<string, int> dict)
         {
             foreach (var kvp in dict)
             { 
-                Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+                Console.WriteLine($"{kvp.Key} => {kvp.Value}");
+            }
+        }
+
+        public static void DictIntStr(Dictionary<int, string> dict)
+        {
+            foreach (var kvp in dict)
+            {
+                Console.WriteLine($"{kvp.Key} => {kvp.Value}");
             }
         }
     }

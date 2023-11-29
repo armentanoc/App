@@ -22,10 +22,10 @@ namespace csharp_programming_logic.BidimensionalArrayExercises
             Dictionary<string, int> columnSum = SumColumns(matrix);
 
             Console.WriteLine("\nSoma de cada linha:");
-            Print.Dict(rowSum);
+            Print.DictStrInt(rowSum);
 
             Console.WriteLine("\nSoma de cada coluna:");
-            Print.Dict(columnSum);
+            Print.DictStrInt(columnSum);
         }
         static Dictionary<string, int> SumRows(int[,] matrix)
         {
