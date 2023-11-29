@@ -40,7 +40,8 @@
 
         static void PrintTitle()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("\nMULTIPLICAÇÃO DE MATRIZES");
+            Print.HorizontalLine();
         }
 
         static int[,] MultiplyMatrices(int[,] matrixA, int[,] matrixB)
