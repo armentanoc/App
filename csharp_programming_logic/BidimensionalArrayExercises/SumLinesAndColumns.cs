@@ -19,6 +19,7 @@ namespace csharp_programming_logic.BidimensionalArrayExercises
             Print.BidimensionalArray(matrix);
 
             Dictionary<string, int> rowSum = SumRows(matrix);
+
             Dictionary<string, int> columnSum = SumColumns(matrix);
 
             Console.WriteLine("\nSoma de cada linha:");

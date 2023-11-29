@@ -2,6 +2,8 @@
 namespace csharp_programming_logic.BidimensionalArrayExercises
 {
     using LibFormatOutput;
+    using System;
+
     internal class Identity
     {
         internal static void Execute()
@@ -9,54 +11,14 @@ namespace csharp_programming_logic.BidimensionalArrayExercises
 
             PrintTitle();
 
-            int[,] matrizIdentidade = {
-                {1, 0, 0},
-                {0, 1, 0},
-                {0, 0, 1}
-            };
-
-            int[,] matrizAntiDiagonal = {
-                {0, 0, 1},
-                {0, 1, 0},
-                {1, 0, 0}
-            };
-
-            int[,] matrizDiagonalNao1 = {
-                {1, 0, 0},
-                {0, 2, 0},
-                {0, 0, 1}
-            };
-
-            int[,] matrizNaoDiagonalNao0 = {
-                {1, 0, 0},
-                {0, 1, 7},
-                {0, 0, 1}
-            };
-
-            int[,] matrizNaoQuadrada = {
-                {1, 0},
-                {0, 1},
-                {0, 0}
-            };
-
-            Print.BidimensionalArray(matrizIdentidade);
-            Console.WriteLine("\nÉ uma matriz identidade: " + CheckIdentityMatrix(matrizIdentidade) + "\n");
-
-            Print.BidimensionalArray(matrizAntiDiagonal);
-            Console.WriteLine("\nÉ uma matriz identidade: " + CheckIdentityMatrix(matrizAntiDiagonal) + "\n");
-
-            Print.BidimensionalArray(matrizDiagonalNao1);
-            Console.WriteLine("\nÉ uma matriz identidade: " + CheckIdentityMatrix(matrizDiagonalNao1) + "\n");
-
-            Print.BidimensionalArray(matrizNaoDiagonalNao0);
-            Console.WriteLine("\nÉ uma matriz identidade: " + CheckIdentityMatrix(matrizNaoDiagonalNao0) + "\n");
-
-            Print.BidimensionalArray(matrizNaoQuadrada);
-            Console.WriteLine("\nÉ uma matriz identidade: " + CheckIdentityMatrix(matrizNaoQuadrada) + "\n");
-
+            TestCases.TestIdentity(TestCases.RealIdentityMatrix());
+            TestCases.TestIdentity(TestCases.MatrizAntiDiagonal());
+            TestCases.TestIdentity(TestCases.MatrizDiagonalNao1());
+            TestCases.TestIdentity(TestCases.MatrizNaoDiagonalNao0());
+            TestCases.TestIdentity(TestCases.MatrizNaoQuadrada());
         }
 
-        static bool CheckIdentityMatrix(int[,] matrix)
+        public static bool CheckIdentityMatrix(int[,] matrix)
         {
             int rows = matrix.GetLength(0);
             int cols = matrix.GetLength(1);
