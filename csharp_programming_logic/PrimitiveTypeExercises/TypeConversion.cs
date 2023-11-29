@@ -4,6 +4,7 @@ namespace csharp_programming_logic.PrimitiveTypeExercises
 
     using LibUserInput;
     using LibFormatOutput;
+    using System.Numerics;
 
     internal class TypeConversion
     {
@@ -12,14 +13,39 @@ namespace csharp_programming_logic.PrimitiveTypeExercises
             PrintTitle();
 
             decimal inputNumber = Receive.Decimal();
-            int intNumber = Convert.ToInt32(inputNumber);
-            double doubleNumber = Convert.ToDouble(inputNumber);
-            float floatNumber = Convert.ToSingle(inputNumber);
+            int intNumber;
+            double doubleNumber;
+            float floatNumber;
 
-            Console.WriteLine($"\nDecimal: {inputNumber}");
-            Console.WriteLine($"Int: {intNumber}");
-            Console.WriteLine($"Double: {doubleNumber}");
-            Console.WriteLine($"Float: {floatNumber}");
+            if (int.TryParse(inputNumber.ToString(), out var intValue))
+            {
+                intNumber = intValue;
+                Console.WriteLine($"Int: {intNumber}");
+            }
+            else
+            {
+                Console.WriteLine("Não foi possível converter em int.");
+            }
+
+            if (double.TryParse(inputNumber.ToString(), out var doubleValue))
+            {
+                doubleNumber = doubleValue;
+                Console.WriteLine($"Double: {doubleNumber}");
+            }
+            else
+            {
+                Console.WriteLine("Não foi possível converter em double.");
+            }
+
+            if (float.TryParse(inputNumber.ToString(), out var floatValue))
+            {
+                floatNumber = floatValue;
+                Console.WriteLine($"Float: {floatNumber}");
+            }
+            else
+            {
+                Console.WriteLine("Não foi possível converter em float.");
+            }
         }
 
         private static void PrintTitle()
