@@ -1,9 +1,4 @@
-﻿
-
-
-using System.Drawing;
-using System.Text.RegularExpressions;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Text.RegularExpressions;
 
 namespace LibUserInput
 {
@@ -85,10 +80,10 @@ namespace LibUserInput
             {
                 Console.Write($"Informe o seu nome: ");
                 name = Console.ReadLine();
-                
-                if (IsValidName(name)) 
-                { 
-                    break; 
+
+                if (IsValidName(name))
+                {
+                    break;
                 }
 
                 Console.WriteLine("Erro: O nome não pode ser vazio ou conter caracteres numéricos.\n");
@@ -114,7 +109,7 @@ namespace LibUserInput
             }
 
             return choice;
-            
+
         }
 
         public static decimal Decimal()

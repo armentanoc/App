@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace LibUserInput
 {
@@ -25,25 +20,26 @@ namespace LibUserInput
                 operationChoice = Receive.IntNumber();
 
                 if (Regex.IsMatch(Convert.ToString(operationChoice), "^[1-4]$"))
-                    {
-                        validOperation = true;
-                    }
+                {
+                    validOperation = true;
+                }
                 else
                 {
                     Console.WriteLine("Operação inválida. Digite um número de 1 a 4.");
                 }
-                }
+            }
 
             return GetResultOfOperation(firstNumber, secondNumber, operationChoice);
 
-            }
+        }
 
         static float GetResultOfOperation(float firstNumber, float secondNumber, int operationChoice)
         {
 
             float result = 0;
 
-            switch (operationChoice) {
+            switch (operationChoice)
+            {
                 case 1: //Adição
                     result = Sum(firstNumber, secondNumber); break;
                 case 2: //Subtração

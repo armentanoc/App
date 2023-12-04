@@ -46,7 +46,7 @@ namespace LibFormatOutput
         public static void DictStrInt(Dictionary<string, int> dict)
         {
             foreach (var kvp in dict)
-            { 
+            {
                 Console.WriteLine($"{kvp.Key} => {kvp.Value}");
             }
         }
