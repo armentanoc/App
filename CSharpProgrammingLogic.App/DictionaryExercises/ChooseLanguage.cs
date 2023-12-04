@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace csharp_programming_logic.DictionaryExercises
+namespace CSharpProgammingLogic.App.DictionaryExercises
 {
     internal class ChooseLanguage
     {

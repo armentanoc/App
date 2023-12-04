@@ -2,7 +2,7 @@
 using LibUserInput;
 using LibFormatOutput;
 
-namespace csharp_programming_logic.ArrayExercises
+namespace CSharpProgammingLogic.App.ArrayExercises
 {
     public class FindInArray
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace csharp_programming_logic.ArrayExercises
+namespace CSharpProgammingLogic.App.ArrayExercises
 {
     internal class SortingAlgorithm
     {

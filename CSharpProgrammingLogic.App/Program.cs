@@ -2,7 +2,7 @@
 using LibFormatOutput;
 using LibUserInput;
 
-namespace csharp_programming_logic
+namespace CSharpProgammingLogic.App
 {
     internal class Program
     {

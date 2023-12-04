@@ -1,7 +1,7 @@
 ﻿
 using LibUserInput;
 
-namespace csharp_programming_logic.PrimitiveTypeExercises
+namespace CSharpProgammingLogic.App.PrimitiveTypeExercises
 {
     internal class Calculator
     {

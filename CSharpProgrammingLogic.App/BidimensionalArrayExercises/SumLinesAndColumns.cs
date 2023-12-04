@@ -1,7 +1,7 @@
 ﻿
 using LibFormatOutput;
 
-namespace csharp_programming_logic.BidimensionalArrayExercises
+namespace CSharpProgammingLogic.App.BidimensionalArrayExercises
 {
     internal class SumLinesAndColumns
     {

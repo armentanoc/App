@@ -2,7 +2,7 @@
 using LibFormatOutput;
 using LibUserInput;
 
-namespace csharp_programming_logic.ArrayExercises
+namespace CSharpProgammingLogic.App.ArrayExercises
 {
     public class ArrayIntegers
     {

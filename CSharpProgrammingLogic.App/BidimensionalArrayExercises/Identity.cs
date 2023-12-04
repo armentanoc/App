@@ -1,5 +1,5 @@
 ﻿
-namespace csharp_programming_logic.BidimensionalArrayExercises
+namespace CSharpProgammingLogic.App.BidimensionalArrayExercises
 {
     using LibFormatOutput;
     using System;
