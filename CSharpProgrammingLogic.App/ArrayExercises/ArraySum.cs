@@ -1,7 +1,6 @@
-﻿
-using LibFormatOutput;
+﻿using LibFormatOutput;
 
-namespace CSharpProgammingLogic.App.ArrayExercises
+namespace CSharpProgrammingLogic.App.ArrayExercises
 {
     internal class ArraySum
     {
@@ -11,11 +10,11 @@ namespace CSharpProgammingLogic.App.ArrayExercises
             Print.HorizontalLine();
 
             Console.WriteLine("\n\nVETOR A");
-            int[] arrayA = ArrayExercises.ArrayIntegers.Execute();
+            int[] arrayA = ArrayIntegers.Execute();
             Print.HorizontalLine();
 
             Console.WriteLine("\nVETOR B");
-            int[] arrayB = ArrayExercises.ArrayIntegers.Execute();
+            int[] arrayB = ArrayIntegers.Execute();
             Print.HorizontalLine();
 
             ExecuteSum(arrayA, arrayB);
@@ -28,8 +27,8 @@ namespace CSharpProgammingLogic.App.ArrayExercises
 
             for (int i = 0; i < maxLength; i++)
             {
-                int valueA = (i < arrayA.Length) ? arrayA[i] : 0;
-                int valueB = (i < arrayB.Length) ? arrayB[i] : 0;
+                int valueA = i < arrayA.Length ? arrayA[i] : 0;
+                int valueB = i < arrayB.Length ? arrayB[i] : 0;
 
                 arrayC[i] = valueA + valueB;
             }

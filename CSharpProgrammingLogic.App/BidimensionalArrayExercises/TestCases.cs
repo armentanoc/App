@@ -1,6 +1,6 @@
 ﻿using LibFormatOutput;
 
-namespace CSharpProgammingLogic.App.BidimensionalArrayExercises
+namespace CSharpProgrammingLogic.App.BidimensionalArrayExercises
 {
     internal class TestCases
     {
@@ -48,7 +48,7 @@ namespace CSharpProgammingLogic.App.BidimensionalArrayExercises
 
             return matrizNaoDiagonalNao0;
         }
-        
+
         public static int[,] MatrizNaoQuadrada()
         {
             int[,] matrizNaoQuadrada = {

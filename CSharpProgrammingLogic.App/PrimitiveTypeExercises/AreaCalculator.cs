@@ -1,8 +1,7 @@
-﻿
-using LibFormatOutput;
+﻿using LibFormatOutput;
 using LibUserInput;
 
-namespace CSharpProgammingLogic.App.PrimitiveTypeExercises
+namespace CSharpProgrammingLogic.App.PrimitiveTypeExercises
 {
     internal class AreaCalculator
     {

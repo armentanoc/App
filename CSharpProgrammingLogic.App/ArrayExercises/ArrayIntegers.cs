@@ -1,8 +1,7 @@
-﻿
-using LibFormatOutput;
+﻿using LibFormatOutput;
 using LibUserInput;
 
-namespace CSharpProgammingLogic.App.ArrayExercises
+namespace CSharpProgrammingLogic.App.ArrayExercises
 {
     public class ArrayIntegers
     {

@@ -1,9 +1,9 @@
-﻿namespace CSharpProgammingLogic.App.BidimensionalArrayExercises
+﻿namespace CSharpProgrammingLogic.App.BidimensionalArrayExercises
 {
 
     using LibFormatOutput;
     using System;
-        internal class Multiply
+    internal class Multiply
     {
         internal static void Execute()
         {

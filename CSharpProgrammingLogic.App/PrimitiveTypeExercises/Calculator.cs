@@ -1,11 +1,11 @@
-﻿
-using LibUserInput;
+﻿using LibUserInput;
 
-namespace CSharpProgammingLogic.App.PrimitiveTypeExercises
+namespace CSharpProgrammingLogic.App.PrimitiveTypeExercises
 {
     internal class Calculator
     {
-        public static void Execute() {
+        public static void Execute()
+        {
 
             Console.WriteLine("\nOPERAÇÕES MATEMÁTICAS");
             Console.WriteLine("\nVocê deve informar dois números e, na sequência, a operação desejada.");

@@ -1,5 +1,4 @@
-﻿
-namespace CSharpProgammingLogic.App.PrimitiveTypeExercises
+﻿namespace CSharpProgrammingLogic.App.PrimitiveTypeExercises
 {
 
     using LibUserInput;

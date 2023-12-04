@@ -1,8 +1,7 @@
-﻿
-using LibFormatOutput;
+﻿using LibFormatOutput;
 using LibUserInput;
 
-namespace CSharpProgammingLogic.App.ArrayExercises
+namespace CSharpProgrammingLogic.App.ArrayExercises
 {
     internal class DynamicArray
     {
@@ -17,7 +16,7 @@ namespace CSharpProgammingLogic.App.ArrayExercises
             while (true)
             {
                 float number = Receive.FloatNumber();
-                if (number == 0) break; 
+                if (number == 0) break;
                 i++;
                 arrFloat = ResizeArray(arrFloat, i);
                 arrFloat[i - 1] = number;
@@ -27,7 +26,7 @@ namespace CSharpProgammingLogic.App.ArrayExercises
 
         }
 
-        static void showArrInformation(float[] arrFloat )
+        static void showArrInformation(float[] arrFloat)
         {
             Print.HorizontalLine();
             Console.WriteLine("\nARRAY DINÂMICO:");
@@ -42,7 +41,7 @@ namespace CSharpProgammingLogic.App.ArrayExercises
             int evenNumbers = 0;
             foreach (float number in arr)
             {
-                evenNumbers += (number % 2 == 0) ? 1 : 0;
+                evenNumbers += number % 2 == 0 ? 1 : 0;
             }
             return evenNumbers;
         }

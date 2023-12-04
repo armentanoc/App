@@ -3,7 +3,7 @@
 
 using LibFormatOutput;
 
-namespace CSharpProgammingLogic.App.DictionaryExercises
+namespace CSharpProgrammingLogic.App.DictionaryExercises
 {
     internal class ExploringMethods
     {

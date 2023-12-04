@@ -1,6 +1,6 @@
 ﻿using LibFormatOutput;
 
-namespace CSharpProgammingLogic.App.ArrayExercises
+namespace CSharpProgrammingLogic.App.ArrayExercises
 {
     internal class _1To100Sum
     {

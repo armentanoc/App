@@ -1,15 +1,14 @@
-﻿
-using LibFormatOutput;
+﻿using LibFormatOutput;
 using LibUserInput;
 
-namespace CSharpProgammingLogic.App.PrimitiveTypeExercises
+namespace CSharpProgrammingLogic.App.PrimitiveTypeExercises
 {
     internal class StringManipulation
     {
 
-       /* 5 - Manipulação de Strings:
-Solicite ao usuário para inserir seu nome completo.
-Utilize variáveis de string para exibir o nome em maiúsculas, minúsculas e o comprimento da string.*/
+        /* 5 - Manipulação de Strings:
+ Solicite ao usuário para inserir seu nome completo.
+ Utilize variáveis de string para exibir o nome em maiúsculas, minúsculas e o comprimento da string.*/
         internal static void Execute()
         {
             PrintTitle();

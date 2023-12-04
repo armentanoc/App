@@ -1,8 +1,7 @@
-﻿
-using LibFormatOutput;
+﻿using LibFormatOutput;
 using LibUserInput;
 
-namespace CSharpProgammingLogic.App
+namespace CSharpProgrammingLogic.App
 {
     internal class Program
     {

@@ -1,8 +1,7 @@
-﻿
-using LibFormatOutput;
+﻿using LibFormatOutput;
 using LibUserInput;
 
-namespace CSharpProgammingLogic.App.ArrayExercises
+namespace CSharpProgrammingLogic.App.ArrayExercises
 {
     internal class ArrayFunctions
     {
@@ -10,7 +9,7 @@ namespace CSharpProgammingLogic.App.ArrayExercises
         {
             writeExecuteMessage();
             float[] arrFloat = generateTenItemsArray();
-            
+
             float mean = arrFloat.Average();
             Console.WriteLine($"Média: {mean}");
 

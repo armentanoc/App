@@ -1,6 +1,6 @@
 ﻿using LibFormatOutput;
 
-namespace CSharpProgammingLogic.App.DictionaryExercises
+namespace CSharpProgrammingLogic.App.DictionaryExercises
 {
     internal class CountNumbers
     {
@@ -9,13 +9,14 @@ namespace CSharpProgammingLogic.App.DictionaryExercises
             PrintTitle();
 
             int[] arrayDeInteiros = new int[] { 1, 1, 8, 8, 0, 5, 5, 5, 8, 3, 8, 3, 10 };
-            
+
             Dictionary<int, int> occurrences = arrayDeInteiros
                 .GroupBy(n => n) //O método GroupBy em LINQ é usado para agrupar elementos de uma sequência com base em uma chave comum
                 .ToDictionary(g => g.Key, g => g.Count()); //
 
             Console.WriteLine("Array\n");
-            foreach (int numero in arrayDeInteiros) {
+            foreach (int numero in arrayDeInteiros)
+            {
                 Console.Write(numero + " ");
             }
 

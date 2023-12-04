@@ -1,5 +1,4 @@
-﻿
-namespace CSharpProgammingLogic.App.BidimensionalArrayExercises
+﻿namespace CSharpProgrammingLogic.App.BidimensionalArrayExercises
 {
     using LibFormatOutput;
     using System;
@@ -44,7 +43,7 @@ namespace CSharpProgammingLogic.App.BidimensionalArrayExercises
                 }
             }
 
-            return true; 
+            return true;
         }
 
         static void PrintTitle()

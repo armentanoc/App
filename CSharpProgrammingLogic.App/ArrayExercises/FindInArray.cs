@@ -2,7 +2,7 @@
 using LibUserInput;
 using LibFormatOutput;
 
-namespace CSharpProgammingLogic.App.ArrayExercises
+namespace CSharpProgrammingLogic.App.ArrayExercises
 {
     public class FindInArray
     {
@@ -10,12 +10,12 @@ namespace CSharpProgammingLogic.App.ArrayExercises
         {
             Print.HorizontalLine();
             Console.WriteLine("\nPROCURANDO NÚMERO EM UM ARRAY");
-            
-            int[] numbersArray = ArrayExercises.ArrayIntegers.Execute();
+
+            int[] numbersArray = ArrayIntegers.Execute();
 
             Print.HorizontalLine();
             Console.WriteLine("\nAGORA, VOCÊ DEVE INFORMAR O NÚMERO A SER PESQUISADO");
-            
+
             int numberToSearch = Receive.IntNumber();
             SearchForNumber(numberToSearch, numbersArray);
         }

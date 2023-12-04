@@ -1,5 +1,7 @@
-﻿
-namespace CSharpProgammingLogic.App
+﻿using CSharpProgrammingLogic.App.ArrayExercises;
+using CSharpProgrammingLogic.App.PrimitiveTypeExercises;
+
+namespace CSharpProgrammingLogic.App
 {
     internal class MainChoiceStructure
     {
@@ -11,62 +13,62 @@ namespace CSharpProgammingLogic.App
                     Console.WriteLine("\nO programa será encerrado.\n");
                     break;
                 case 1:
-                    PrimitiveTypeExercises.OddOrEven.Execute();
+                    OddOrEven.Execute();
                     break;
                 case 2:
-                    PrimitiveTypeExercises.Calculator.Execute();
+                    Calculator.Execute();
                     break;
                 case 3:
-                    PrimitiveTypeExercises.AnalyzeGrades.Execute();
+                    AnalyzeGrades.Execute();
                     break;
                 case 4:
-                    PrimitiveTypeExercises.TriangleTypes.Execute();
+                    TriangleTypes.Execute();
                     break;
                 case 5:
-                    PrimitiveTypeExercises.StringManipulation.Execute();
+                    StringManipulation.Execute();
                     break;
                 case 6:
-                    PrimitiveTypeExercises.TypeConversion.Execute(); //falta
+                    TypeConversion.Execute(); //falta
                     break;
                 case 7:
-                    PrimitiveTypeExercises.AreaCalculator.Execute(); //falta
+                    AreaCalculator.Execute(); //falta
                     break;
                 case 8:
-                    int[] numbersArray = ArrayExercises.ArrayIntegers.Execute();
-                    ArrayExercises.ArrayFunctions.PrintFunctions(numbersArray);
+                    int[] numbersArray = ArrayIntegers.Execute();
+                    ArrayFunctions.PrintFunctions(numbersArray);
                     break;
                 case 9:
-                    ArrayExercises.FindInArray.Execute();
+                    FindInArray.Execute();
                     break;
                 case 10:
-                    ArrayExercises.ArraySum.Execute();
+                    ArraySum.Execute();
                     break;
                 case 11:
-                    ArrayExercises.ArrayFunctions.Execute();
+                    ArrayFunctions.Execute();
                     break;
                 case 12:
-                    ArrayExercises._1To100Sum.Execute();
+                    _1To100Sum.Execute();
                     break;
                 case 13:
-                    ArrayExercises.DynamicArray.Execute();
+                    DynamicArray.Execute();
                     break;
                 case 14:
-                    ArrayExercises.SortingAlgorithm.Execute(); //falta
+                    SortingAlgorithm.Execute(); //falta
                     break;
                 case 15:
                     BidimensionalArrayExercises.SumElements.Execute();
                     break;
                 case 16:
-                    BidimensionalArrayExercises.Identity.Execute(); 
+                    BidimensionalArrayExercises.Identity.Execute();
                     break;
                 case 17:
-                    BidimensionalArrayExercises.Multiply.Execute(); 
+                    BidimensionalArrayExercises.Multiply.Execute();
                     break;
                 case 18:
-                    BidimensionalArrayExercises.SumLinesAndColumns.Execute(); 
+                    BidimensionalArrayExercises.SumLinesAndColumns.Execute();
                     break;
                 case 19:
-                   DictionaryExercises.CountNumbers.Execute();
+                    DictionaryExercises.CountNumbers.Execute();
                     break;
                 case 20:
                     DictionaryExercises.ChooseLanguage.Execute();

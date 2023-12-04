@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace CSharpProgammingLogic.App.DictionaryExercises
+namespace CSharpProgrammingLogic.App.DictionaryExercises
 {
     internal class ChooseLanguage
     {
@@ -25,7 +25,7 @@ namespace CSharpProgammingLogic.App.DictionaryExercises
                 Console.WriteLine("\nVocê deverá selecionar um idioma para exibição do programa\n1 - Português \n2 - Inglês \n3 - Espanhol \n0 - Sair\n");
                 int languageKey = Receive.IntNumber();
 
-                if(languageKey == 0)
+                if (languageKey == 0)
                 {
                     break;
                 }

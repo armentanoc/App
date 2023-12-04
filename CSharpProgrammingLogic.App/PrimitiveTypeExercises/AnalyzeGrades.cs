@@ -1,16 +1,15 @@
-﻿
-using LibFormatOutput;
+﻿using LibFormatOutput;
 using LibUserInput;
 
-namespace CSharpProgammingLogic.App.PrimitiveTypeExercises
+namespace CSharpProgrammingLogic.App.PrimitiveTypeExercises
 {
     internal class AnalyzeGrades
     {
         internal static void Execute()
         {
             PrintTitle();
-            float grade = Receive.Grade();  
-            string isTheStudentApproved = (grade >= 7) ? "Aprovado" : "Reprovado";
+            float grade = Receive.Grade();
+            string isTheStudentApproved = grade >= 7 ? "Aprovado" : "Reprovado";
             Console.WriteLine(isTheStudentApproved);
         }
 
